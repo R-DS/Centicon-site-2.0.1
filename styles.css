@@ -1,0 +1,527 @@
+
+
+section{
+    margin-bottom: 60px;
+}
+h1, p{
+    font-family: "Montserrat-Thin", serif;
+}
+.sec-heading {
+    font-size: 45px !important;
+}
+@media only screen and (max-width: 640px) {
+    .sec-heading{
+        font-size: 38px !important;
+    }
+}
+/* navbar cs start*/
+.navbar{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.navbar-toggler{
+    background-color: #d4af37;
+}
+.navbar-toggler:hover{
+    color: #d4af37;
+}
+
+
+.navbar-brand{
+    font-family: Montserrat-Thin, serif;
+    color: #d4af37 !important;
+    font-size: x-large;
+}
+.navbar{
+    background-color: #1c2834 !important;
+}
+.navbar-nav li a{
+    color: #d4af37 !important;
+    font-family: 'Montserrat, sans-serif', serif;
+    font-size: larger;
+}
+
+.navbar-nav li a:hover{
+    background-color: #d4af37;
+    color: #1c2834 !important;
+    font-family: 'Montserrat, sans-serif', serif;
+    font-weight: bolder;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.autohide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+/*nav bar css ends*/
+
+
+.cnt-block {
+    height: 39px;
+}
+
+
+
+/*Home Section*/
+.background1{
+    height: 100vh; width: 100%; margin-top: -68px;
+    animation-name: home-section;
+    background-image: url("img/tiling-1.jpg");
+    filter: brightness(50%);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 7s;
+    background-blend-mode: saturation;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    animation-direction: alternate-reverse;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+.home-content{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#slogan{
+    color: white;
+}
+
+@keyframes home-section {
+    0%{
+        background-image: url("img/bathroom-3.jpg");
+    }
+    20%{
+        background-image: url("img/simpolo.jpg");
+    }
+    40%{
+        background-image: url("img/simpolo-2020193_1920.jpg");
+    }
+    60%{
+        background-image: url("img/Stone-outdoor.jpg");
+    }
+    80%{
+        background-image: url("img/tiles-1478503_1920.jpg");
+    }
+    100%{
+        background-image: url("img/bathroom-1.jpg");
+    }
+}
+
+#get-quote{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+    color: #1c2834;
+    background-image: linear-gradient(0.25turn, #d69600, #ffdf7a, #d69600);
+    border-radius: 30px;
+    width: 180px;
+}
+
+#get-quote:hover{
+    box-shadow: 0 0 15px #d4af37;
+    color: black;
+}
+
+
+
+
+/* About us */
+#AboutUsId h4{
+    font-family: 'Montserrat, sans-serif', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#AboutUsId p{
+    font-size: larger;
+}
+#aboutUsImg{
+    width: 300px !important;
+}
+
+
+/* Services section*/
+
+#servicesId{
+    padding: 30px 0;
+}
+.single-box{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.img-area{
+    overflow: hidden;
+    padding: 5px 5px 5px;
+}
+.img-area img{
+    margin: 0 auto;
+    transition: all 0.5s ease;
+    max-width: 100%;
+    min-height: 500px;
+    border-radius: 16px;
+    filter: brightness(50%);
+}
+.single-box:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(40%);
+}
+.single-box:hover p{
+    font-size: large;
+    cursor: pointer;
+    top: 20%;
+}
+
+.info-area{
+    width: 90%;
+}
+
+.info-area h1{
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    left: 0; right: 0;
+    font-family: Montserrat-Thin, serif;
+    font-size: 45px;
+    -webkit-text-stroke: 1.8px #d4af37;
+    color: white;
+}
+.single-box:hover h1{
+    font-size: 50px;
+    top: 5%;
+}
+.info-area p{
+    position: absolute;
+    top: 27%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Arial, monospace;
+    font-size: 17px;
+    color: white;
+}
+
+.info-area a{
+    position: absolute;
+    top: 90%;
+}
+.move-animation{
+    position: relative;
+    animation: move-animation 2s ease-in-out infinite;
+}
+
+.team-slider .owl-dots{
+    /*margin-top: -75px !important;*/
+}
+.team-slider .owl-nav{
+    /*margin-top: 8% !important;*/
+}
+.team-slider .owl-nav button{
+    border: solid 1px #fff !important;
+    width: 45px;
+    height: 30px !important;
+    overflow: hidden;
+    border-radius: 8px !important;
+}
+.team-slider .owl-nav button:hover{
+    background-color: #d4af37 !important;
+}
+.team-slider .owl-nav button span{
+    font-weight: bolder;
+}
+
+
+
+
+
+/* Testimonial */
+.testimonial .carousel-item{
+    min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial .carousel-item:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.testimonial .carousel-item h2{
+    font-family: "Montserrat-Thin", serif;
+    font-size: 80px;
+    color: #d69600 !important;
+    opacity: 0;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.testimonial .carousel-item p{
+    font-family: "Montserrat-Thin", serif;
+    font-size: 24px;
+    margin: 0;
+    color: #1c2834;
+    opacity: 0;
+    text-transform: uppercase;
+    left: 50% !important;
+    top: 50%;
+    text-align: center;
+}
+.testimonial .carousel-item.active h2{
+    animation: fadeInLeft 0.5s ease forwards;
+}
+.testimonial .carousel-item.active p{
+    animation: fadeInRight 0.5s ease forwards;
+}
+.testimonial .carousel-controls{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 10;
+    transform: translate(-50%);
+}
+.testimonial .carousel-indicators{
+    position: relative;
+    margin: 0;
+}
+.testimonial .carousel-indicators li{
+    width: 30px;
+    height: 5px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    border: solid 2px transparent;
+    transition: all 0.3s ease;
+    background-color: #1c2834;
+}
+.testimonial .carousel-control-next-icon,
+.testimonial .carousel-control-prev-icon{
+    width: 30px;
+}
+.testimonial .carousel-control-next{
+    right: -90px;
+}
+.testimonial .carousel-control-prev{
+    left: -90px;
+}
+.testimonial .carousel-indicators li.active{
+    border-color: #d69600;
+    transform: scale(1.2);
+}
+.testimonial .carousel-control-next,
+.testimonial .carousel-control-prev{
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: rgba(28, 40, 52, 0.1);
+}
+.testimonial .carousel-control-next:hover,
+.testimonial .carousel-control-prev:hover{
+    box-shadow: 0 0 10px #1c2834;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+/* Why Chose Us*/
+#whyChoseUsId p {
+    font-size: larger !important;
+}
+
+
+
+
+
+
+    /*Contact */
+.contact2 {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contact2 .title {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    background: linear-gradient(0.25turn, #d69600, #ffdf7a, #d69600);
+    padding-bottom: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.contact2 .form-field {
+    position: relative;
+    /*can reduce size using margin*/
+    margin: 30px 0;
+
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact2 .input-text {
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #d4af37;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+    /*outline: none;*/
+    outline-color: #d69600;
+}
+
+label {
+    position: absolute;
+    left: 11px;
+    bottom: 28px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #1c2834;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+    transform: translateY(25px);
+    pointer-events: none;
+}
+
+.moveUp {
+    transform: translateY(-9px);
+}
+
+.contact-form .label-contact-message {
+    left: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1c2834;
+    cursor: text;
+    text-transform: capitalize;
+}
+
+.contact-form .input-text-message {
+    width: 100%;
+    margin-top: 2px;
+    border-width: 0.5px 0.5px 2px 0.5px;
+    border-color: #d69600;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text-message:focus {
+    outline-color: #d69600;
+    border-color: #d69600;
+}
+
+.contact2 .contact-form button {
+    /*background-image: linear-gradient(90deg, #d69600, #ffdf7a);*/
+    margin-left: calc(100% - 200px);
+    background-image: linear-gradient(0.25turn, #d69600, #ffdf7a, #d69600);
+    color: #1c2834;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+.form-field-message a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .contact2 h1 {
+        font-size: 38px !important;
+    }
+    .contact2 .contact-form button {
+        margin-left: calc((100% - 200px)/2);
+    }
+
+    #servicesId .card{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    #whyChoseUsId h1{
+        text-align: center !important;
+    }
+
+    #AboutUsId p,
+    #whyChoseUsId p {
+        font-size: large !important;
+    }
+}
+
+/*Map*/
+
+
+
+
+footer{
+    padding: 30px;
+    background-color: #1c2834;
+    color: white;
+}
