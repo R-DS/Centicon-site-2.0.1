@@ -66,7 +66,7 @@ if (array_key_exists('customer_email', $_POST)) {
     //See other examples for how to use a remote server such as gmail
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
-    $mail->Port = 587;
+    $mail->Port = 587;-
 
     $mail->SMTPAuth = true;
     $mail->Username = 'services@centicon.com.au';

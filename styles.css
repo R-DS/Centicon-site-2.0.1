@@ -20,10 +20,10 @@ h1, p{
     padding-right: 13px;
 }
 .navbar-toggler{
-    background-color: #d4af37;
+    background: linear-gradient(0.15turn, #d69600, #ffdf7a, #d69600);
 }
 .navbar-toggler:hover{
-    color: #d4af37;
+    color: #ffdf7a;
 }
 
 
@@ -42,11 +42,12 @@ h1, p{
 }
 
 .navbar-nav li a:hover{
-    background-color: #d4af37;
+    /*background-color: #d4af37;*/
+    background: linear-gradient(0.25turn, #d69600, #ffdf7a, #d69600);
     color: #1c2834 !important;
     font-family: 'Montserrat, sans-serif', serif;
     font-weight: bolder;
-    transition: background-color 0.5s ease-in-out;
+    transition: background 0.9s ease-in-out !important;
 }
 
 .autohide{
@@ -517,7 +518,7 @@ label {
 
 /*Map*/
 
-
+/*Hello spaarta*/
 
 
 footer{
